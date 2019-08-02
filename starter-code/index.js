@@ -16,14 +16,21 @@ class SortedList {
     }
     max() {
       if(0 < this.length){
-        return this.items[pos]
+        return Math.max
     } else throw new Error("EmptySortedList")
     }
     min() {
       
     }
     average() {}
-    sum() {}
+    sum() {
+      if(this.length>0){
+      let total = 0;
+      for(let i = 0; i<this.length; i++){
+          total += this.item[i]
+      }
+    }
+  } else return 0
   };
   
   module.exports = SortedList;
